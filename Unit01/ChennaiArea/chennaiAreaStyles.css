@@ -1,13 +1,7 @@
 ﻿/*
-   New Perspectives on HTML
-   Tutorial 1
-   Review Assignment
-
-   J-Prop Shop Style Sheet
-   Author: David Vinet
-   Date:   3/1/2014
-
-   Filename:         basicstyles.css
+   ChennaiArea
+   Author: Brian Bird
+   Date:   6/20/17
    Supporting Files: none
 
 */
@@ -42,12 +36,8 @@ margin-top: 5px;
 
 aside {
    float: right;
-   border: 3px solid rgb(255, 177, 255);
    margin: 30px;
    padding: 10px;
-box-shadow:10px 10px 20px #000;
--webkit-box-shadow:10px 10px 20px #000;
--moz-box-shadow: 10px 10px 20px #000;
 }
 
 aside img {
@@ -67,7 +57,7 @@ font-size: 0.8em;
 font-style: normal;
 font-variant: small-caps;
 border-top: 1px solid black;
-background-color: rgb(255, 177, 255);
+background-color: lightblue;
 }
 
 /* Block Styles */
