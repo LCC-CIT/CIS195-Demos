@@ -1,0 +1,15 @@
+/*
+    Written by Brian Bird
+    10/12/17
+    "Finished" version (except it isn't finished yet)
+*/
+
+@font-face {
+    font-family: Gentium;
+    src: url(GenBasR.tff) format('truetype');
+}
+
+body {
+    background-color: lightcyan;
+    font-family: Gentium;
+}
