@@ -11,6 +11,7 @@
 
 body {
     background-color: lightcyan;
+    width: 700px;
 }
 
 h1,
@@ -28,10 +29,6 @@ body>p {
     color: green;
 }
 
-#topics {
-    background-color: papayawhip;
-}
-
 header a:hover {
     font-size: larger;
 }
@@ -46,14 +43,38 @@ article span {
 header {
     background: url(SouthIndia.png) top right no-repeat;
     background-size: 100px;
+    width: 80%;
+    height: 150px;
+}
+
+nav.horizontal {
+    width: 75%;
 }
 
 nav.horizontal p {
     float: left;
+    margin: 5px;
     padding: 10px;
     background-color: beige;
 }
 
-header {
-    float: clear;
+nav.horizontal a {
+    text-decoration: none;
+}
+
+#states h2 {
+    clear: left;
+}
+
+#states img {
+    float: left;
+    padding-right: 40px;
+}
+
+#topicLinks {
+    background-color: papayawhip;
+}
+
+#topics {
+    clear: left;
 }
