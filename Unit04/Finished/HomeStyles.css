@@ -11,7 +11,8 @@
 
 body {
     background-color: lightcyan;
-    width: 700px;
+    width: 695px;
+    /* same as width of map image */
 }
 
 h1,
@@ -33,17 +34,9 @@ header a:hover {
     font-size: larger;
 }
 
-
-/* uncomment to demonstrate the difference between in-line and block elements 
-article span {
-    display: block;
-}
-*/
-
 header {
     background: url(SouthIndia.png) top right no-repeat;
     background-size: 100px;
-    width: 80%;
     height: 150px;
 }
 
@@ -62,19 +55,20 @@ nav.horizontal a {
     text-decoration: none;
 }
 
-#states h2 {
-    clear: left;
-}
-
-#states img {
-    float: left;
+#states {
     padding-right: 40px;
+    clear: left;
 }
 
 #topicLinks {
+    float: right;
+}
+
+section nav {
     background-color: papayawhip;
 }
 
+
+/*
 #topics {
-    clear: left;
-}
+}*/

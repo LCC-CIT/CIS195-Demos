@@ -4,7 +4,7 @@
 <head>
     <!-- Unit 4 Web site example
            Author: Brian Bird
-           Date:   10/3/17, revised 10/17/17
+           Date: 10/3/17, revised 10/17/19
            "Finished" version 
       -->
     <meta charset="UTF-8" />
@@ -17,6 +17,7 @@
     <header>
         <h1 id="Top">Guide to South India</h1>
         <!-- a background image will be put here by css -->
+        <!-- float nav to left so paragraphs are at the top -->
         <nav class="horizontal">
             <p>Pages:</p>
             <p><a href="Chennai/chennai.htm">The city of Channai</a></p>
@@ -24,23 +25,29 @@
         </nav>
     </header>
 
+    <!-- clear float -->
     <section id="states">
         <h2>States of South India</h2>
-        <img src="SouthIndiaStatesAndCities.jpg" width="500" height="400" alt="Map of states and cities of South India" usemap="#SouthIndia" />
+        <img src="SouthIndiaStatesAndCities.jpg" alt="Map of states and cities of South India" usemap="#SouthIndia" />
         <map name="SouthIndia">
             <area shape="rect" coords="275, 275, 363, 396" href="TamilNadu.htm" alt="Tamil Nadu" />
         </map>
     </section>
-    <nav id="topicLinks">
-        <h2>On this page:</h2>
-        <ul>
-            <li><a href="#Culture">Culture</a></li>
-            <li><a href="#Food">Food</a></li>
-            <li><a href="#Languages">Languages</a></li>
-        </ul>
-    </nav>
+
+    <!-- float section right -->
+    <section id="topicLinks">
+        <nav>
+            <h2>On this page:</h2>
+            <ul>
+                <li><a href="#Culture">Culture</a></li>
+                <li><a href="#Food">Food</a></li>
+                <li><a href="#Languages">Languages</a></li>
+            </ul>
+        </nav>
+    </section>
+
     <section id="topics">
-        <hr />
+        <!-- float cleared here -->
         <article id="Culture">
             <h2>Culture</h2>
             I'll put information about <span class="greenBold">South Indian culture</span> here.
@@ -63,9 +70,11 @@
             <p>Even more interesting stuff</p>
         </article>
     </section>
+
     <footer>
         <a href="#Top">Back to the top</a>
     </footer>
+
 </body>
 
 </html>
