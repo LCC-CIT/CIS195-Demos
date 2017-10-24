@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Brian Bird, 10/24/17 
+        Practice with clipping
+      -->
+    <meta charset="UTF-8" />
+    <title>Clipping</title>
+    <style>
+        body {
+            width: 600px;
+        }
+
+        body * {
+            border: solid 1px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        #fish2 {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            clip: rect(200px, 400px, 400px, 200px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img id="fish1" src="jellyfish.jpg" width="100px" />
+    </header>
+    <section>
+        We're going to clip this image
+        <article>
+            <img id="fish2" src="jellyfish.jpg" />
+        </article>
+    </section>
+
+
+</body>
