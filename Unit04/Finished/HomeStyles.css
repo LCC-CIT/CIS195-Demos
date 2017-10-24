@@ -51,6 +51,13 @@ nav.horizontal p {
     background-color: beige;
 }
 
+nav.horizontal p {
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    background-color: beige;
+}
+
 nav.horizontal a {
     text-decoration: none;
 }
