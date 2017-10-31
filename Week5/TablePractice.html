@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <!-- Table Practice
+           Author: Brian Bird
+           Date:   10/31/17
+      -->
+        <style>
+            td {
+                width:75px;
+            }
+            /*
+            tr>td:first-of-type {
+                background-color:blue;
+            }
+            */
+            .firstColumn {
+                background-color: blue;
+            }
+            .thirdColum {
+                background-color:gray;
+            }
+            tfoot {
+                background-color: palegoldenrod;
+            }
+        </style>
+      <meta charset="UTF-8" />
+      <title>Table Practice</title>
+   </head>
+   <body>
+        <table border="5" summary="This table demonstrates concepts from Tutorial 5">
+            <colgroup>
+                <col />
+                <col />
+                <col class="thirdColum"/>
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="firstColumn">Column 1</th>
+                    <th>Column 2</th>
+                    <th colspan="2">Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td rowspan="2" class="firstColumn">This is cell 1</td>
+                <td>This is cell 2</td>
+                <td>This is cell 3</td>
+                <td><b>This is cell 4 more text<b></td>
+                </tr>
+                <tr>
+                    <td>This is cell 2</td>
+                    <td colspan="2">This is cell 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                    <td colspan="4" class="firstColumn">This is the footer</td>                    
+            </tfoot>
+           <caption align="bottom">Table that demonstrates tables</caption>
+        </table>
+   </body>
+</html>
