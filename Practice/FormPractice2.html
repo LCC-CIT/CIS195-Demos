@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Brian Bird, 11/9/17 
+        Practice with forms
+      -->
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+       <label>Hiking Trails</label> <br />
+        <select name="hike" id="trail" size="6" >
+            <optgroup label="Near Eugene">
+                <option value="pisgah">Mt. Pisgah Summit</option>
+                <option value="spencer">Spencer Butte</option>
+            </optgroup>
+            <optgroup label="Further out">
+                <option value="fallcreek">Fall Creek</option>
+                <option value="alsea">Alsea Falls</option>
+            </optgroup>
+        </select>
+        <br /><br />
+        Trail length<br />
+        <input type="radio" name="length" value="short"> Short<br />
+        <input type="radio" name="length" value="long"> Long<br />
+        Steepness<br />
+        <input type="radio" name="steepness" value="level"> Level<br />
+        <input type="radio" name="steepness" value="steep"> Steep<br />
+        
+        <input type=text maxlength="7" required="required"><br />
+        <input type=number name="digits" min="10" max="90" step="10"><br />
+        <input type=date name="date"><br />
+        
+        <textarea name="description" rows="2" cols="20" wrap="soft"></textarea>
+        <br />
+        <input type="submit" value="Enter">
+        <input type="reset" value="Clear the form">
+    </form>
+</body>
+</html>
