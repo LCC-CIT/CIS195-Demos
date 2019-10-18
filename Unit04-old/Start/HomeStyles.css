@@ -22,15 +22,38 @@ body>p {
     font-family: Gentium;
 }
 
+nav p {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid peru;
+    background-color: peachpuff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+header h2 {
+    clear: left;
+}
+
 .greenBold {
     font-weight: bold;
     color: green;
 }
 
 #topics {
-    background-color: papayawhip;
+    background-color: papayawhip; 
 }
 
 header a:hover {
     font-size: larger;
+}
+
+header {
+    background: url(SouthIndia.png) top right no-repeat;
+    background-size: 100px;
+    height: 120px;
+    width: 600px;
 }
