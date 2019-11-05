@@ -1,0 +1,15 @@
+body * {
+    border:solid;
+}
+
+.left {
+    float: left;
+}
+
+p {
+    margin: 0px;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+

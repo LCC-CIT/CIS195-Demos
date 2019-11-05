@@ -1,5 +1,4 @@
 /*
-    Unit 4 web site example
     Written by Brian Bird
     10/10/17, modified 10/17/17
 */
@@ -11,8 +10,6 @@
 
 body {
     background-color: lightcyan;
-    width: 695px;
-    /* same as width of map image */
 }
 
 h1,
@@ -25,9 +22,29 @@ body>p {
     font-family: Gentium;
 }
 
+nav p {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid peru;
+    background-color: peachpuff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+header h2 {
+    clear: left;
+}
+
 .greenBold {
     font-weight: bold;
     color: green;
+}
+
+#topics {
+    background-color: papayawhip; 
 }
 
 header a:hover {
@@ -37,45 +54,6 @@ header a:hover {
 header {
     background: url(SouthIndia.png) top right no-repeat;
     background-size: 100px;
-    height: 150px;
+    height: 120px;
+    width: 600px;
 }
-
-nav.horizontal {
-    width: 75%;
-}
-
-nav.horizontal p {
-    float: left;
-    margin: 5px;
-    padding: 10px;
-    background-color: beige;
-}
-
-nav.horizontal p {
-    float: left;
-    margin: 5px;
-    padding: 10px;
-    background-color: beige;
-}
-
-nav.horizontal a {
-    text-decoration: none;
-}
-
-#states {
-    padding-right: 40px;
-    clear: left;
-}
-
-#topicLinks {
-    float: right;
-}
-
-section nav {
-    background-color: papayawhip;
-}
-
-
-/*
-#topics {
-}*/
