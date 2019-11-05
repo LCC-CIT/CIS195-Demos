@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Unit 3 Web site example
+           Author: Brian Bird
+           Date:   10/3/17, revised 10/18/19
+      -->
+    <meta charset="UTF-8" />
+    <title>South India</title>
+    <base href="MapPages/" target="_blank">
+</head>
+
+<body>
+    <h1 id="Top">Guide to South India</h1>
+    <img src="../SouthIndia.png" width="100" height="100" alt="Map of South India" />
+    <hr />
+    <nav>
+        <h2>Pages in this site:</h2>
+        <ul>
+            <li><a href="Chennai/chennai.html">The city of Channai</a></li>
+            <li><a href="ChennaiArea/chennaiArea.html">Chennai Area</a></li>
+            <li><a href="TamilNadu.html">Tamil Nadu</a></li>
+            <li><a href="Default.html">Default Page</a></li>
+        </ul>
+    </nav>
+    <h2>States of South India</h2>
+    <img src="../SouthIndiaStatesAndCities.jpg" alt="Map of states and cities of South India" usemap="#SouthIndia" />
+    <map name="SouthIndia">
+        <area shape="rect" coords="240,250,325,325" 
+        href="TamilNadu.html" alt="Tamil Nadu">
+        <area shape="circle" coords="352,250,10" 
+        href="Chennai/chennai.html" alt="City of Chennai">
+        <area shape="poly" coords="350,230,360,250,330,270,350,230" 
+        href="ChennaiArea/chennaiArea.html" alt="Area around Chennai"/>
+        <area shape="default" href="Default.html" alt="No hot-spot link here">
+    </map>
+</body>
+
+</html>
