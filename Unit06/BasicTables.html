@@ -10,12 +10,35 @@
         table,
         td,
         th {
-            border: 2px solid;
+            border: 2px solid green;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            color:inherit;
+        }
+
+
+        caption {
+            caption-side: bottom;
+        }
+
+       thead {
+            background-color: teal;
+        }
+
+        #table3 > tbody {
+            background-color: salmon;
+        }
+
+        tfoot {
+            background-color: steelblue;
         }
     </style>
 </head>
 
 <body>
+
     <h2>Movie Reviews</h2>
     <table>
         <tr>
@@ -60,6 +83,39 @@
         </tr>
         <caption>Tentative schedule--more to come</caption>
     </table>
+
+    <br><br>
+
+    <!-- CSS Styling Example -->
+    <table id="table3">
+        <colgroup>
+            <col>
+            <col style="background-color: darkgray;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>One</th>
+                <th>Two</th>
+            </tr>
+        </thead>
+       
+            <tr>
+                <td>Thing 1</td>
+                <td>Thing 2</td>
+            </tr>
+            <tr>
+                <td>Another one</td>
+                <td>Three more</td>
+            </tr>
+     
+        <tfoot>
+            <tr>
+                <td>Two things</td>
+                <td>Four things</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 
 </html>
