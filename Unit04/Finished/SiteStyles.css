@@ -1,0 +1,60 @@
+/*
+    Written by Brian Bird 6/20/17, revised 10/17/22
+    This example includes a web font and pseudo-class, 
+    even though those aren't required in the lab assignment.
+*/
+
+@font-face {
+    font-family: Gentium;
+    src: url(GenBasR.ttf) format('truetype');
+}
+
+header a:hover {
+    font-size: larger;
+}
+
+/* Structural element styles */
+
+body {
+    max-width: 1000px;
+    min-width: 250px;
+    font-family: Gentium, Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+header {
+    text-align: center;
+}
+
+/* text-indent applies to images too */
+figure {
+    text-indent:2em;
+}
+
+
+/* Block styles */
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+blockquote p {
+    font-size: 0.8em;
+}
+
+footer nav {
+    text-indent:3.5em;
+}
+
+footer p {
+    text-align: center;
+}
+
+#last {
+    text-indent:2em;
+}
