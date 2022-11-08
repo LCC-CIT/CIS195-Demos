@@ -1,25 +1,21 @@
 /*
-    Written by Brian Bird
-    10/10/17, modified 10/17/17
+    Written by Brian Bird 10/10/17, revised 10/17/22
 */
 
-@font-face {
-    font-family: Gentium;
-    src: url(GenBasR.tff) format('truetype');
+a:hover {
+    font-size: larger;
 }
 
-body {
-    background-color: lightcyan;
+ul {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: arial, sans-serif;
 }
 
 h1,
 h2 {
     color: darkolivegreen;
     font-family: Arial, sans-serif;
-}
-
-body>p {
-    font-family: Gentium;
 }
 
 .greenBold {
@@ -29,8 +25,4 @@ body>p {
 
 #topics {
     background-color: papayawhip;
-}
-
-header a:hover {
-    font-size: larger;
 }
