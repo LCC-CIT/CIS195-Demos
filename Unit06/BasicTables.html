@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <!-- Two tables with almost no styling
-        By Brian Bird, 11/12/2019, revised 11/10/2020 -->
+    <!-- Two tables with minimal styling, a third with inline CSS styling.
+        By Brian Bird, 11/12/2019, revised 11/10/2020 and 11/8/2022 -->
     <meta charset="UTF-8" />
     <title>Table Demo</title>
     <style>
@@ -13,24 +13,24 @@
             border: 2px solid green;
             border-collapse: collapse;
         }
-
-        td, th {
-            color:inherit;
+        
+        td,
+        th {
+            color: inherit;
         }
-
-
+        
         caption {
             caption-side: bottom;
         }
-
-       thead {
+        
+        thead {
             background-color: teal;
         }
-
-        #table3 > tbody {
+        
+        #table3>tbody {
             background-color: salmon;
         }
-
+        
         tfoot {
             background-color: steelblue;
         }
@@ -86,7 +86,8 @@
 
     <br><br>
 
-    <!-- CSS Styling Example -->
+    <h2>Example of Styling thead and tfoot</h2>
+    <!-- CSS Styling Example, uses thead and tfoot -->
     <table id="table3">
         <colgroup>
             <col>
@@ -98,16 +99,16 @@
                 <th>Two</th>
             </tr>
         </thead>
-       
-            <tr>
-                <td>Thing 1</td>
-                <td>Thing 2</td>
-            </tr>
-            <tr>
-                <td>Another one</td>
-                <td>Three more</td>
-            </tr>
-     
+
+        <tr>
+            <td>Thing 1</td>
+            <td>Thing 2</td>
+        </tr>
+        <tr>
+            <td>Another one</td>
+            <td>Three more</td>
+        </tr>
+
         <tfoot>
             <tr>
                 <td>Two things</td>
