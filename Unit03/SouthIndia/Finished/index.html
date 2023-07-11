@@ -4,40 +4,39 @@
 <head>
     <!-- Unit 3 Web site example
            Author: Brian Bird
-           Date:   10/3/17, revised 10/18/19
+           Date:   10/3/17, revised 10/18/19, 7/11/23
       -->
-    <meta charset="UTF-8" />
     <title>South India</title>
-    <base href="MapPages/" target="_blank">
 </head>
 
 <body>
     <h1 id="Top">Guide to South India</h1>
     <!-- Note that the base href affects images too -->
-    <img src="../SouthIndia.png" width="100" height="100" alt="Map of South India" />
+    <img src="SouthIndia.png" width="100" height="100" alt="Map of South India" />
     <hr />
     <nav>
-        <h2>Pages in this site:</h2>
+        <h2>Menu</h2>
         <ul>
-            <li><a href="Chennai/chennai.html">The city of Channai</a></li>
-            <li><a href="ChennaiArea/chennaiArea.html">Chennai Area</a></li>
-            <li><a href="TamilNadu.html">Tamil Nadu</a></li>
+            <li><a href="Chennai/index.html">The city of Channai</a></li>
+            <li><a href="ChennaiArea/index.html">Chennai Area</a></li>
+            <li><a href="TamilNadu/index.html">Tamil Nadu</a></li>
+            <li><a href="Hyderabad/index.html">Hyderabad</a></li>
         </ul>
     </nav>
     <h2>States of South India</h2>
-    <img src="../SouthIndiaStatesAndCities.jpg" alt="Map of states and cities of South India" usemap="#SouthIndia" />
+    <img src="SouthIndiaStatesAndCities.jpg" alt="Map of states and cities of South India" usemap="#SouthIndia" />
     <map name="SouthIndia">
         <area shape="rect" coords="240,250,325,325" 
-        href="TamilNadu.html" alt="Tamil Nadu">
+        href="TamilNadu/index.html" alt="Tamil Nadu">
 
         <area shape="circle" coords="352,250,20" 
-        href="Chennai/chennai.html" alt="City of Chennai">
+        href="Chennai/index.html" alt="City of Chennai">
 
         <area shape="rect" coords="277,77,373,96" 
-        href="Hyderabad/hyderabad.html#info" alt="City of Hyderabad">
+        href="Hyderabad/index.html#info" alt="City of Hyderabad">
 
         <area shape="poly" coords="350,230,360,250,330,270,350,230" 
-        href="ChennaiArea/chennaiArea.html" alt="Area around Chennai"/>
+        href="ChennaiArea/index.html" alt="Area around Chennai"/>
         <!--The default area makes it hard to know when you have found a hot spot
         <area shape="default" href="Default.html" alt="No hot-spot link here">
          -->
