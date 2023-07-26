@@ -9,10 +9,27 @@
     <meta charset="utf-8">
     <title>Near Chennai</title>
     <link href="../SiteStyles.css" rel="stylesheet">
+    <style>
+        /* style the aside and float it to the right */
+        aside {
+            float: right;
+            margin: 30px 0 15px 0;
+        }
+
+        figure {
+            margin: 5px;
+        }
+
+        /* clear the float on the second article */
+        article:nth-of-type(2) {
+            clear: right;
+        }
+
+    </style>
 </head>
 
 <body>
-    
+
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -24,19 +41,23 @@
 
     <header>
         <hr>
-        <h1>Points of Interest Near Chennai</h1>
+        <h1>Chennai Area</h1>
         <img src="Mahabalipuram_pano1.jpg" height="100" alt="Temples at Mahabalipuram">
         <!-- Ssriram mt - Own work, Panoramics of temples in India, CC BY-SA 3.0, File:Mahabalipuram pano1.jpg, Created: 8 August 2011 -->
         <hr>
     </header>
 
+    <h2>Points of Interest Near Chennai</h2>
+
     <aside>
-        <img src="Chennai_and_vicinity_USEN.gif" alt="Map of the chennai area">
-        <p>Chennai and vicinity</p>
+        <figure>
+            <img src="Chennai_and_vicinity_USEN.gif" alt="Map of the chennai area">
+            <figcaption>Chennai and vicinity</figcaption>
+        </figure>
     </aside>
 
     <article>
-        <h2>Mahabalipuram</h2>
+        <h3>Mahabalipuram</h3>
         <p>58 km south of Chennai is an ancient historic town dating to the time of Periplus (1st century CE) and
             Ptolemy (140 CE), from whence ancient Indian traders sailed to countries of South East Asia.
         </p>
@@ -60,7 +81,7 @@
     </article>
 
     <article>
-        <h2>Crocadile Bank</h2>
+        <h3>Crocadile Bank</h3>
         <p> The Madras Crocodile Bank Trust and Centre for Herpetology (MCBT) is a reptile zoo and herpetology research
             station, located 40 kilometres (25 mi) south of the city of Chennai. The centre is both a registered trust
             and a recognized zoo and
@@ -89,9 +110,11 @@
             </li>
         </ul>
     </article>
-ß
+    <br>
     <footer>
+        <hr>
         Brian Bird &bull; Traveler and Instructor &bull; Eugene, Oregon, USA
+        <hr>
     </footer>
 </body>
 
