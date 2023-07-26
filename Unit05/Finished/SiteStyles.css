@@ -1,0 +1,86 @@
+/*
+    Written by Brian Bird 6/20/17, revised 7/26/23
+*/
+
+/* Since the content of the ul is floating li elements, 
+   it doesn't naturally have any height, so we're adding it. */
+nav ul {
+    list-style-type: none;
+    height: 60px;
+}
+
+/* style the nav menu buttons */
+nav li {
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    background-color: beige;
+}
+
+nav a:hover {
+    font-size: larger;
+}
+
+nav a {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+}
+
+/* clear the float after the nav element, adjust the spacing */
+header {
+    clear: left;
+}
+
+header h1 {
+    margin-top: 0px;
+}
+
+
+/* Structural element styles */
+
+body {
+    width: 750px;
+    font-family: Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+header {
+    text-align: center;
+}
+
+/* text-indent applies to images too */
+figure {
+    text-indent:2em;
+}
+
+
+/* Block styles */
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+blockquote p {
+    font-size: 0.8em;
+}
+
+footer nav {
+    text-indent:3.5em;
+}
+
+footer p {
+    text-align: center;
+}
+
+#last {
+    text-indent:2em;
+}

@@ -1,80 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Unit 4 Web site example
+    <!-- Unit 3 Web site example
            Author: Brian Bird
-           Date: 10/3/17, revised 10/17/19
-           "Finished" version 
+           Date:   10/3/17, revised 7/26/23
       -->
-    <meta charset="UTF-8" />
-    <link href="HomeStyles.css" rel="stylesheet" />
+    <meta charset="utf-8">
     <title>South India</title>
+    <link href="SiteStyles.css" rel="stylesheet">
+    <link href="HomeStyles.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <nav>
+        <ul>
+            <li><a href="Chennai/index.html">The City of Channai</a></li>
+            <li><a href="ChennaiArea/index.html">Chennai Area</a></li>
+            <li><a href="TamilNadu/index.html">Tamil Nadu</a></li>
+            <li><a href="Hyderabad/index.html">Hyderabad</a></li>
+        </ul>
+    </nav>
+
     <header>
+        <hr>
         <h1 id="Top">Guide to South India</h1>
-        <!-- a background image will be put here by css -->
-        <!-- float nav to left so paragraphs are at the top -->
-        <nav class="horizontal">
-            <p>Pages:</p>
-            <p><a href="Chennai/chennai.htm">The city of Channai</a></p>
-            <p><a href="ChennaiArea/chennaiArea.htm">Chennai Area</a></p>
-        </nav>
+        <img src="SouthIndia.png" height="100" alt="Map of South India">
+        <hr>
     </header>
 
-    <!-- clear float -->
-    <section id="states">
-        <h2>States of South India</h2>
-        <img src="SouthIndiaStatesAndCities.jpg" alt="Map of states and cities of South India" usemap="#SouthIndia" />
-        <map name="SouthIndia">
-            <area shape="rect" coords="275, 275, 363, 396" href="TamilNadu.htm" alt="Tamil Nadu" />
-        </map>
-    </section>
+    <h2>States of South India</h2>
+    <img src="SouthIndiaStatesAndCities.jpg" alt="Map of states and cities of South India" usemap="#SouthIndia">
+    <map name="SouthIndia">
+        <area shape="rect" coords="240,250,325,325" href="TamilNadu/index.html" alt="Tamil Nadu">
 
-    <!-- float section right -->
-    <section id="topicLinks">
-        <nav>
-            <h2>On this page:</h2>
-            <ul>
-                <li><a href="#Culture">Culture</a></li>
-                <li><a href="#Food">Food</a></li>
-                <li><a href="#Languages">Languages</a></li>
-            </ul>
-        </nav>
-    </section>
+        <area shape="circle" coords="352,250,20" href="Chennai/index.html" alt="City of Chennai">
 
-    <section id="topics">
-        <!-- float cleared here -->
-        <article id="Culture">
-            <h2>Culture</h2>
-            I'll put information about <span class="greenBold">South Indian culture</span> here.
-            <p>interesting stuff</p>
-            <p>More interesting stuff</p>
-            <p>Even more interesting stuff</p>
-        </article>
-        <article id="Food">
-            <h2>Food</h2>
-            I'll put information about <span class="greenBold">South Indian food</span> here.
-            <p>interesting stuff</p>
-            <p>More interesting stuff</p>
-            <p>Even more interesting stuff</p>
-        </article>
-        <article id="Languages">
-            <h2>Languages</h2>
-            I'll put information about <span class="greenBold">South Indian languages</span> here.
-            <p>interesting stuff</p>
-            <p>More interesting stuff</p>
-            <p>Even more interesting stuff</p>
-        </article>
-    </section>
+        <area shape="rect" coords="277,77,373,96" href="Hyderabad/index.html#info" alt="City of Hyderabad">
 
+        <area shape="poly" coords="350,230,360,250,330,270,350,230" href="ChennaiArea/index.html"
+            alt="Area around Chennai">
+        <!--The default area makes it hard to know when you have found a hot spot
+        <area shape="default" href="Default.html" alt="No hot-spot link here">
+         -->
+    </map>
+    <br><br>
     <footer>
-        <a href="#Top">Back to the top</a>
+        Brian Bird &bull; Traveler and Instructor &bull; Eugene, Oregon, USA
     </footer>
-
 </body>
 
 </html>

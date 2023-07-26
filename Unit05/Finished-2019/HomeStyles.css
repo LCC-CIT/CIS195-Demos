@@ -1,0 +1,74 @@
+/*
+    Unit 4 web site example
+    Written by Brian Bird
+    10/10/17, modified 10/17/17, 7/20/23
+*/
+
+@font-face {
+    font-family: Gentium;
+    src: url(GenBasR.tff) format('truetype');
+}
+
+body {
+    background-color: lightcyan;
+    width: 695px;
+    /* same as width of map image */
+}
+
+h1,
+h2 {
+    color: darkolivegreen;
+    font-family: Arial, sans-serif;
+}
+
+body>p {
+    font-family: Gentium;
+}
+
+.greenBold {
+    font-weight: bold;
+    color: green;
+}
+
+header a:hover {
+    font-size: larger;
+}
+
+header {
+    background: url(SouthIndia.png) top right no-repeat;
+    background-size: 100px;
+    height: 150px;
+}
+
+nav.horizontal {
+    width: 75%;
+}
+
+nav.horizontal p {
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    background-color: beige;
+}
+
+nav.horizontal a {
+    text-decoration: none;
+}
+
+#states {
+    padding-right: 40px;
+    clear: left;
+}
+
+#topicLinks {
+    float: right;
+}
+
+section nav {
+    background-color: papayawhip;
+}
+
+
+/*
+#topics {
+}*/
