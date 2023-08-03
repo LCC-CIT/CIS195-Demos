@@ -2,25 +2,62 @@
 <html lang="en">
 
 <head>
-    <!-- Chennai Area
-        Interesting places near Chennai
+    <!-- Chennai Area, interesting places near Chennai
         Author: Brian Bird
-        Date:   6/21/2017, revised 10/17/22
+        Date:   6/21/2017, Revised 7/26/23
    -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Near Chennai</title>
     <link href="../SiteStyles.css" rel="stylesheet">
+    <style>
+        /* style the aside and float it to the right */
+        aside {
+            float: right;
+            margin: 30px 0 15px 0;
+        }
+
+        figure {
+            margin: 5px;
+        }
+
+        /* clear the float on the second article */
+        article:nth-of-type(2) {
+            clear: right;
+        }
+
+    </style>
 </head>
 
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Chennai/index.html">The City of Channai</a></li>
+            <li><a href="../TamilNadu/index.html">Tamil Nadu</a></li>
+            <li><a href="../Hyderabad/index.html">Hyderabad</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <img src="Mahabalipuram_pano1.jpg" alt="Temples at Mahabalipuram" title="Photo by Ssriram mt, CC BY-SA">
+        <hr>
+        <h1>Chennai Area</h1>
+        <img src="Mahabalipuram_pano1.jpg" height="100" alt="Temples at Mahabalipuram">
         <!-- Ssriram mt - Own work, Panoramics of temples in India, CC BY-SA 3.0, File:Mahabalipuram pano1.jpg, Created: 8 August 2011 -->
-        <h1>Points of Interest Near Chennai</h1>
+        <hr>
     </header>
 
+    <h2>Points of Interest Near Chennai</h2>
+
+    <aside>
+        <figure>
+            <img src="Chennai_and_vicinity_USEN.gif" alt="Map of the chennai area">
+            <figcaption>Chennai and vicinity</figcaption>
+        </figure>
+    </aside>
+
     <article>
-        <h2>Mahabalipuram</h2>
+        <h3>Mahabalipuram</h3>
         <p>58 km south of Chennai is an ancient historic town dating to the time of Periplus (1st century CE) and
             Ptolemy (140 CE), from whence ancient Indian traders sailed to countries of South East Asia.
         </p>
@@ -44,12 +81,11 @@
     </article>
 
     <article>
-        <h2>Crocadile Bank</h2>
-        <p> The <span style="font-style:oblique">Crocodile Bank Trust and Centre for Herpetology</span> (MCBT) is a
-            reptile zoo and herpetology research station, located 40 kilometres (25 mi) south of the city of Chennai.
-            The centre is both a registered
-            trust and a recognized zoo and is India's leading institution for herpeto faunal conservation, research and
-            education.
+        <h3>Crocadile Bank</h3>
+        <p> The Madras Crocodile Bank Trust and Centre for Herpetology (MCBT) is a reptile zoo and herpetology research
+            station, located 40 kilometres (25 mi) south of the city of Chennai. The centre is both a registered trust
+            and a recognized zoo and
+            is India's leading institution for herpeto faunal conservation, research and education.
         </p>
         <ul>
             <li>Crocodiles
@@ -65,7 +101,7 @@
             </li>
             <li>Snakes
                 <ul>
-                    <li> Indian rock python (<em>Python molurus</em>)</li>
+                    <li>Indian rock python (<em>Python molurus</em>)</li>
                     <li>Reticulated python (<em>Python reticulatus</em>)</li>
                     <li>Spectacled cobra (Albino) (<em>Naja naja</em>)</li>
                     <li>Green anaconda (<em>Eunectes murinus</em>)</li>
@@ -74,23 +110,11 @@
             </li>
         </ul>
     </article>
-
-    <article>
-        <h2>Map</h2>
-        <figure><img src="Chennai_and_vicinity_USEN.gif" alt="Map of the chennai area">
-            <figcaption>Chennai and Vicinity</figcaption>
-        </figure>
-    </article>
-
+    <br>
     <footer>
-        <br>
-        <nav>
-            <a href="../Index.html">Back home</a>
-        </nav>
-        <br><br><br>
-        <p>
-            Brian Bird &bull; Traveler and Instructor &bull; Eugene, Oregon, USA
-        </p>
+        <hr>
+        Brian Bird &bull; Traveler and Instructor &bull; Eugene, Oregon, USA
+        <hr>
     </footer>
 </body>
 
