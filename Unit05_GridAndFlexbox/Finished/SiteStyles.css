@@ -69,7 +69,16 @@ header img {
     margin: auto;
 }
 
-/* text-indent applies to figures too */
+footer div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer span {
+    width: fit-content;
+}
+
 figcaption {
     text-align: center;
 }
