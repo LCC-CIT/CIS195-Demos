@@ -8,8 +8,27 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: papayawhip;
+            width: 600px;
         }
-        fieldset, #submit {
+
+        p {
+            text-align: center;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: fit-content;
+            /* center the form */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        fieldset,
+        #submit {
             background-color: rgb(229, 222, 146);
             border: 2px solid black;
             padding: 10px;
@@ -21,10 +40,10 @@
             font-size: 1.0em;
         }
 
-        fieldset {
+        fieldset, p {
             width: 400px;
         }
-        
+
         legend {
             font-size: 1.2em;
             font-weight: bold;
@@ -39,8 +58,10 @@
 
 <body>
     <h1>Hiking Survey</h1>
-    Fill out the form below to report your experience hiking one of our local trails.
-    <br><br>
+    <p>
+        Fill out the form below to report your experience hiking one of our local trails.
+    </p>
+    
     <form>
         <fieldset>
             <legend>Your Name</legend>
@@ -93,7 +114,8 @@
             <input type="date"><br>
             <br>
             <label for="message">Your comments on the trail</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" wrap="soft" placeholder="Your experience"></textarea><br>
+            <textarea id="message" name="message" rows="4" cols="50" wrap="soft"
+                placeholder="Your experience"></textarea><br>
         </fieldset>
         <input id="submit" type="submit" value="Submit Survey"><br>
 
