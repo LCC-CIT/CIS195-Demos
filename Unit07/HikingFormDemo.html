@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+
+    <form>
+        <fieldset>
+            <legend>Your Name</legend>
+            <label for="fn">First name:</label><br>
+            <input type="text" id="fn" name="firstname"><br>
+            <label for="ln">Last name:</label><br>
+            <input type="text" id="ln" name="lastname">
+            <br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" cols="25" wrap="hard"></textarea><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Hiking</legend>
+            <label for="hike">Hiking Trails</label><br>
+            <select name="hike" id="trail" size="4" multiple="multiple">
+                <optgroup label="Near Eugene">
+                    <option value="pisgah">Mt. Pisgah Summit</option>
+                    <option value="spencer">Spencer Butte</option>
+                </optgroup>
+                <optgroup label="Further Out">
+                    <option value="fall">Fall Creek</option>
+                    <option value="alsea">Alsea Falls</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <input type="radio" name="difficulty" id="easy" value="easy" checked><label for="easy">Easy</label><br>
+            <input type="radio" name="difficulty" id="intermediate" value="intermediate"><label
+                for="intermediate">Moderately challenging</label><br />
+            <input type="radio" name="difficulty" id="challenging" value="challenging"><label for="challenging">Very
+                challenging</label><br />
+            <br>
+            <input type="radio" name="length" value="short">Short trail<br>
+            <input type="radio" name="length" value="long">Long trail<br>
+            <br>
+            <input type="radio" name="steepness" value="flat">Level trail<br>
+            <input type="radio" name="steepness" value="intermediate"> Steep trail<br>
+        </fieldset>
+        <label>Enter the date</label><br>
+        <input type="date">
+        Telephone number<br>
+        <input type="tel">
+        <br><br><br><br><br>
+        <input type="submit" value="Enter"><br>
+
+    </form>
+</body>
+
+</html>
