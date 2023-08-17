@@ -3,30 +3,55 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Form Demo</title>
+    <title>Hiking Survey</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: papayawhip;
+        }
+        fieldset, #submit {
+            background-color: rgb(229, 222, 146);
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #submit {
+            background-color: lightgray;
+            font-size: 1.0em;
+        }
+
+        fieldset {
+            width: 400px;
+        }
+
+        select {
+            width: 200px;
+            font-size: larger;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Form Demo</h1>
-
+    <h1>Hiking Survey</h1>
+    Fill out the form below to report your experience hiking one of our local trails.
+    <br><br>
     <form>
         <fieldset>
             <legend>Your Name</legend>
             <label for="fn">First name:</label><br>
-            <input type="text" id="fn" name="firstname"><br>
+            <input type="text" id="fn" name="firstname" placeholder="First name"><br><br>
             <label for="ln">Last name:</label><br>
-            <input type="text" id="ln" name="lastname">
-            <br>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="4" cols="25" wrap="hard"></textarea><br>
+            <input type="text" id="ln" name="lastname" placeholder="Last name"><br>
         </fieldset>
-        <br>
+
         <fieldset>
-            <legend>Hiking</legend>
-            <label for="hike">Hiking Trails</label><br>
-            <select name="hike" id="trail" size="4" multiple="multiple">
+            <legend>Trails</legend>
+            <label for="hike">Choose a trail</label><br>
+            <select name="hike" id="trail" size="1">
                 <optgroup label="Near Eugene">
                     <option value="pisgah">Mt. Pisgah Summit</option>
+                    <option value="pisgah">Swing Hill</option>
                     <option value="spencer">Spencer Butte</option>
                 </optgroup>
                 <optgroup label="Further Out">
@@ -34,26 +59,38 @@
                     <option value="alsea">Alsea Falls</option>
                 </optgroup>
             </select>
-            <br>
-            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Difficulty</legend>
             <input type="radio" name="difficulty" id="easy" value="easy" checked><label for="easy">Easy</label><br>
             <input type="radio" name="difficulty" id="intermediate" value="intermediate"><label
                 for="intermediate">Moderately challenging</label><br />
             <input type="radio" name="difficulty" id="challenging" value="challenging"><label for="challenging">Very
-                challenging</label><br />
-            <br>
-            <input type="radio" name="length" value="short">Short trail<br>
-            <input type="radio" name="length" value="long">Long trail<br>
-            <br>
-            <input type="radio" name="steepness" value="flat">Level trail<br>
-            <input type="radio" name="steepness" value="intermediate"> Steep trail<br>
+                challenging</label>
         </fieldset>
-        <label>Enter the date</label><br>
-        <input type="date">
-        Telephone number<br>
-        <input type="tel">
-        <br><br><br><br><br>
-        <input type="submit" value="Enter"><br>
+
+        <fieldset>
+            <legend>Distance</legend>
+            <input type="radio" name="length" value="short" checked>Short trail<br>
+            <input type="radio" name="length" value="long">Long trail
+        </fieldset>
+
+        <Fieldset>
+            <legend>Steepness</legend>
+            <input type="radio" name="steepness" value="flat" checked>Level trail<br>
+            <input type="radio" name="steepness" value="intermediate"> Steep trail<br>
+        </Fieldset>
+
+        <fieldset>
+            <legend>Your Experience</legend>
+            <label>Date you hiked this trail</label><br>
+            <input type="date"><br>
+            <br>
+            <label for="message">Your comments on the trail</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" wrap="soft" placeholder="Your experience"></textarea><br>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit Survey"><br>
 
     </form>
 </body>
