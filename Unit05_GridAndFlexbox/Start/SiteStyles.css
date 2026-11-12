@@ -1,5 +1,5 @@
 /*
-    Written by Brian Bird 6/20/17, revised 7/26/23
+    Written by Brian Bird 6/20/17, revised 7/26/23, 11/11/26
 */
 
 /* The body is a fixed width, centered in the browser window.
@@ -74,8 +74,4 @@ blockquote p {
 
 footer {
     text-align: center;
-}
-
-#last {
-    text-indent: 2em;
 }

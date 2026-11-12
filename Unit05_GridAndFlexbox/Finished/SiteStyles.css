@@ -1,11 +1,11 @@
 /*
-    Written by Brian Bird 6/20/17, revised 8/3/23
+    Written by Brian Bird 6/20/17, revised 8/3/23, 11/11/26
 */
 
 /* The body is a fixed width, centered in the browser window.
     margin: auto is what centers it. */
 body {
-    width: 800px;
+    width: 750px;
     font-family: Verdana, sans-serif;
     font-size: 14pt;
     background-color: rgb(241, 239, 184);
@@ -150,7 +150,7 @@ figcaption {
 }
 
 /**************************/
-/* Non-structureal styles */
+/* Non-structural styles */
 /**************************/
 
 h2 {
@@ -159,8 +159,4 @@ h2 {
 
 blockquote p {
     font-size: 0.8em;
-}
-
-#last {
-    text-indent: 2em;
 }
