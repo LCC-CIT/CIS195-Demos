@@ -35,6 +35,10 @@ header {
     grid-area: header;
 }
 
+main {
+    grid-area: section1;
+}
+
 /* first section */
 section:first-of-type {
     grid-area: section1;
